@@ -15,7 +15,7 @@ print(dict['idade']) output: 25
 
     filme = {
             'titulo':'Star Wars',
-    keys: 'ano':1977,              :values
+    keys:   'ano':1977,              :values
             'diretor':'George Lucas'
             }
 
@@ -66,7 +66,7 @@ Ferreamentas:
 
 Exercícios:
 
-ex090:
+ex090: v
     Faça um programa que leia nome e média de um aluno, guardando
         também a situação (se o aluno está ou não aprovado)em um 
             dicionário. No final mostre o conteúdo da estrutura na tela.
