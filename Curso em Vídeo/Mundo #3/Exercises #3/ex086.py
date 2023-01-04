@@ -7,4 +7,7 @@ for item in range(3):
         row.append(int(input('Digite um número: ')))
     matrix.append(row[:])
 
-print(matrix[0], matrix[1], matrix[2], sep='\n')
+for c in range(3):
+    for i in range(3):
+        print(f'[{matrix[c][i]:^5}]', end='')
+    print()

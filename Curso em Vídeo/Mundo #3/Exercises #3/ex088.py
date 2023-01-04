@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 allBets = []
 uniqueBet = []
 
@@ -18,7 +19,11 @@ for bet in range(betQuantity):
     allBets.append(uniqueBet[:])
     uniqueBet.clear()
 
+print('+=+'*15)
 for position, guess in enumerate(allBets):
     print(f'\n{position+1}° palpite:', end=' ')
     for order in allBets[position]:
-        print(order, end=', ')
+        print(order, end='; ')
+    sleep(1)
+print('\n\n', '+=+'*15, sep='')
+print('\nBoa Sorte!')

@@ -15,7 +15,8 @@ for item in range(3):
             third += n
     matrix.append(row[:])
 
-print(matrix[0], matrix[1], matrix[2], sep='\n')
+print('+=+'*30)
+print('+=+'*30)
 print(f'O soma dos números pares são: {even}. Já dos ímpares: {odd}')
 print(f'A soma dos valores da terceira coluna é: {third}')
 print(f'O maior valor da segunda linha é: {max(matrix[1])}')

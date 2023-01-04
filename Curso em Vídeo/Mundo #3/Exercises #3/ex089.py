@@ -1,5 +1,4 @@
 nomedia = []
-aluno = []
 
 print('=+='*10, 'Boletim', '=+='*10)
 
@@ -12,16 +11,12 @@ while True:
     n2 = float(input('Digite a segunda nota: '))
     media = (n1+n2)/2
 
-
-    aluno.append(nome)
-    aluno.append(media)
-    nomedia.append(aluno[:])
-    aluno.clear()
+    nomedia.append([nome, media, [n1, n2]])
 
 print('Listagem de alunos.')
 for n, c in enumerate(nomedia):
-    print(f'{n+1}° Alune: {c[0]}\n\033[034mMédia: {c[1]}\033[m\n')
+    print(f'{n+1}° Alune: \033[32m{c[0]:<10}\033[mMédia: \033[034m{c[1]:>8}\033[m\n')
 
 index = int(input('Digite o código do alune que deseja ver: '))
-print(f'Alune: {nomedia[index-1][0]}\n\033[34mMédia: {nomedia[index-1][1]}\033[m\n')
+print(f'Alune: {nomedia[index-1][0]}\n\033[34mMédia: {nomedia[index-1][1]}\033[m\n\033[31mNotas: {nomedia[index-1][2]}\033[m')
 
