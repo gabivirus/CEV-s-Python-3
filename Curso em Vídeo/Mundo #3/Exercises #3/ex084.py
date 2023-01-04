@@ -8,7 +8,7 @@ rppl = list()
 print('='*30, 'Cadastro de pesagem', '='*30)
 while True:
     prs = str(input('Digite um nome: '))
-    wgt = int(input('Insira um peso: '))
+    wgt = float(input('Insira um peso: '))
     ppl.append(prs)
     ppl.append(wgt)
     rppl.append(ppl[:])
