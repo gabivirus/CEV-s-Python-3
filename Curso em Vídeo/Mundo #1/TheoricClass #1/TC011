@@ -1,0 +1,44 @@
+CORES NO TERMINAL
+
+Padrão ANSI:
+
+escape sequence
+vamos utilizar para o terminal
+tudo dentro de ansi começa com contra barra (\)
+
+como ANSI funciona para cores
+    o código que funciona melhor para python é: \033[
+        e fechar o código com a letra m             \033[m
+            entre o colchete e o 'M' é colocado a cor   \033['cor'm
+                as cores são representadas por códigos
+                    e as representações dentro desse espaço pode variar de 3 até 0 códigos
+                    EX: com 3 códigos
+            O primeiro que vamos usar é o 'style'/'text'/'back'
+                então style: formatação do texto e fonte
+                    text: qual a cor do texto
+                        back: a cor de fundo do texto
+            ::\033[style;text;backm
+            ::\033[0;33;44m
+
+        os códigos para estilo são: 0 (none)\ 1 (bold) \ 4 (underline) \ 7 (negative(switches))
+            para text: 30 (white)\ 31 (red)\ 32 (green)\ 33 (yellow)\ 34 (blue)\ 35 (purple)\ 36 (cian)\ 37 (gray)
+               e back: 40          41        42          43           44         45           46         47
+                    a mesma mesma cor pela unidade só muda o decimal que é 40
+
+Agora um teste: ver a formatação e escreve-lá em código
+
+    0:\033[30;41m
+    1:\033[4;33;44m
+    2:\033[1;35;43m
+    3:\033[30;42m
+    4:\033[m
+    5:\033[7;30m
+
+    quando acor desejada for a a padrão não é necessário colocar nenhum digito
+        o switch\negative vai de acordo com a sua cor padrão também
+
+                                                    Agora Prática
+
+                                                     Exercícios
+
+adicionar cores nos programas já feitos

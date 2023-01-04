@@ -1,0 +1,100 @@
+Condições Aninhadas:
+
+Nem todas funções dependem de true ou false
+    algumas tem mais de duas opções
+        if (a primeira opção)
+        elif (quando há mais de duas opções, indexada sempre após o if,
+                mas nem sempre else é necessário após seu uso
+                    pode ser usado mais vezes, se houverem mais que 3 opções)
+        else (normalmente a segunda opção, á não ser que se use 'elif', então será a última)
+
+Exercícios:
+
+036:v
+    Escreva um programa que para aprovar um empréstimo bancário para a compra de uma casa.
+        O programador vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+
+            Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do valor do salário
+        ou então o empréstimo será negado. v
+
+037:v
+    Escreva um programa que leia um número inteiro qualquer
+        e peça para o usuário escolher qual será a base de conversão:
+
+            -1 para binário.
+            -2 para octal.
+            -3 para hexadecimal.
+
+038:v
+    Escreva um programa que leia dois números inteiros e compare-os,
+        mostrando na tela uma mensagem:
+
+            -O primeiro valor é maior.
+            -O segundo valor é maior.
+            -Ou, não existe valor maior, os dois são iguais. v
+
+039:v
+    Faça um programa que leia o ano de nascimento de um jovem e informe:
+
+        -Se ele ainda vai se alistar ao serviço militar.
+            (e quanto tempo falta).
+        -Se é a hora de se alistar.
+        -Se já passou o tempo do alistamento.
+            (e quanto tempo já passou). v
+
+040:v
+    Crie um programa que leia duas notas de um aluno,
+        calculando a sua média, mostrando uma mensagem final,
+            de acordo com a média atingida:
+
+            -Média abaixo de 5.0:
+                REPROVADO
+            -Média entre 5,0 e 6.9:
+                RECUPERAÇÃO
+            -Média 7.0 ou superior:
+                APROVADO
+
+041:v
+    A confederação nacional precisa de um programa que leia o ano de nascimento de um atleta,
+        e mostre sua categoria de acordo com a idade:
+
+            -Até 9 anos: Mirim
+            -Até 14 anos: Infantil
+            -Até 19 anos: Júnior
+            -Até 25 anos: Sênior
+            -Acima: Master v
+
+042:
+    Refaça o desafio 035 dos triângulos,
+        Acrescentando o recurso de mostrar que tipo de triângulo será formado:
+
+            -Equilátero: all
+            -Isósceles: two
+            -Escaleno: none
+
+043:v
+    Desenvolva uma lógica que leia peso e altura de uma pessoa,
+        calcule seu 'IMC' e mostre seu status, de acordo com a tabela abaixo:
+        (Índice de massa corporal)
+
+            -Abaixo de 18.5: Abaixo do peso
+                -Entre 18.5 e 25: Peso ideal
+                   -De 25 até 30: Sobrepeso
+                   -De 30 até 40: Obesidade
+             -Acima de 40: Obesidade Mórbida
+
+044:v
+    Elabore um programa que calcule o preço pago por um produto,
+        Considerando seu preço normal e condição de pagamento:
+
+            -À vista dinheiro/cheque: 10% de desconto
+            -À vista no cartão: 5% de desconto
+            -Em até 2x no cartão: preço normal
+            -3x ou mais no cartão: 20% de juros v
+
+045:v
+    Crie um programa que faça o computador jogar Jokenpô com você.
+
+    PEDRA
+    PAPEL
+    TESOURA v

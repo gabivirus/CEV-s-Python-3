@@ -1,0 +1,56 @@
+CONDIÇÕES: Simples e Compostas
+
+*Todo método tem parentese no final
+    os programas sempre leem de cima para baixo, feitos de forma simples,
+        mas não é a única forma de seguir
+            é possível causar desvios, como criar histórias a partir de cada escolha
+
+if carro.esquerda(): caminho1
+else: caminho2
+
+com dois caminhos tem verdadeiro e falso
+                             if: - else:
+    se não for verdadeiro, vai executar o comando que representa falso
+
+Estrutura Condicional Simples:
+    com apenas if, ele gera uma ação apenas se uma 'chave' for ativada
+        ex: if nome == 'gabriel':
+           print('nome lindo')
+
+             então 'gabriel' é a chave sua função if, será ativada
+
+     Agora se não for gabriel, if não será ativado
+
+*Quando o comando está colado no lado esquerdo,
+    ele sempre vai acontecer
+
+
+*todo                                                                           odot*
+                                EXERCÍCIOS
+   |
+    ex028: escreva um programa que faça o computador pensar em um número inteiro
+        entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número
+            escolhido pelo computador.
+    O programa deverá escrever se o usuário venceu ou não.
+   |
+    ex029:''''' leia a velocidade de um carro.
+        se o carro ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi mutado
+            A multa vai custar R$7,00 por cada Km acima do limite
+   |
+    ex030:''''' leia um número inteiro qualquer
+        e mostre se ele é PAR ou ÍMPAR
+   |
+    ex031:''''' que pergunte a distância de uma viagem por KM.
+       Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km
+         e R$0,45 para viagens mais longas.
+   |
+    ex032:''''' leia um ano qualquer e mostre se ele é BISSEXTO
+   |
+    ex033:''''' Três números e mostre qual é o maior e qual é o menor
+   |
+    ex034:''''' O Salário de um funcionário e calcule o valor do seu aumento
+        para salários acima de R$1.250,00, calcule um aumento de 10%
+            para os inferiores, o aumento deve ser de 15%.
+   |
+    ex035:''''' O comprimento de três retas
+        e diga se elas podem ou não formar um triângulo.

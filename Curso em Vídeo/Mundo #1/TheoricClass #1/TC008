@@ -1,0 +1,65 @@
+Módulos servem para aprimorar a sua programação.
+o programa vem com o básico. E você pode adicionar biblioteca
+o python vem com bibliotecas limitadas, para otimizar o código
+para incluir alguma biblioteca use o comando
+
+IMPORT e o nome da biblioteca que voê adicionou
+
+e quando importar, se quiser apenas usar uma função daquela biblioteca use
+
+from/library/import/function name. Like: floor, ceil
+
+essas são duas maneiras básicas de importar módulos no python
+um módulo muito utilizado no python é a MATH(math)
+o python já vem com o básico, como alguns operadores de matemática.
+
+com a função math dá para arredondar para cima e para baixo:
+math(ceil): arredonda para cima
+        (floor): arredonda para baixo
+             (trunc): elimina os números depois da vírgula, sem arredonda (truncar)
+                  (pow): calcula potência, como os dois asteriscos **
+                     (sqrt);{square root}: Calcula raiz quadrada
+                         (factorial): função factorial
+
+se você apenas usar: import math, você vai importar tudo
+se quiser apenas um comando, como a raiz quadrada e potência por exemplo use:
+from/ math/ import: sqrt, pow
+
+se você digitar import e ctrl+space, dá pra ver todas as bibliotecas que já vem
+junto com o python. E no site oficial, dá pra ver a biblioteca em docs,
+e também uma aba chamada "PyPi" (python package index), que é o índice
+de pacote extras, um programador pode criar uma library e disponibilizar
+no site oficial
+
+Quando você não tiver uma library instalada ela dará erro ao importar,
+ você pode clicar na lampada que aparecerá ao lado dela, e clique em
+  install package
+
+desafios tc008:
+
+ex.16:
+crie um programa que leia um número real qualquer pelo teclado
+e mostre na tela a sua porção inteira.
+ex: digite um número:6.127
+O número (6.127) tem a parte inteira de 6
+
+ex.17:
+[...] que leia o cumprimento do cateto oposto e do cateto adjacente
+de um triângulo retângulo. calcule e mostre o comprimento da hipotenusa
+
+ex.18:
+[...] que leia um ângulo qualquer e mostre na tela o valor do
+seno cosseno e tangente desse ângulo
+
+ex.19:
+Um professor quer sortear um de seus quatro alunos para apagar
+o quadro. Faça um programa que ajude ele, lendo o nome deles
+e escrevendo o nome do escolhido
+
+ex.20:
+O mesmo professor do desafio anterior quer sortear a ordem de
+apresentação de trabalhos dos alunos. Faça um programa que
+leia o nome dos quatro alunos e mostre a ordem sorteada
+
+ex.21:
+[...] em Python que abra e reproduza o áudio de um arquivo MP3

@@ -1,0 +1,9 @@
+tpa = int(input('Diga o termo da PA: '))
+rpa = int(input('Agora a razão: '))
+a = 10
+pa = 0
+pa = pa + tpa
+while a != 0:
+    print(f'{pa} >', end=' ')
+    pa += rpa
+    a -= 1

@@ -1,0 +1,9 @@
+fib = int(input('Diga a quantidade de fatores da sequência: '))
+suc = 1
+ant = 0
+while fib != 0:
+    print(f'{ant} >', end=' ')
+    fib -= 1
+    t = suc + ant
+    ant = suc
+    suc = t

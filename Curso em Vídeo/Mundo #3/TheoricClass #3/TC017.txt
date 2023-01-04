@@ -1,0 +1,96 @@
+Listas:
+
+Listas são mutáveis, os valores da lista devem ser armazenados dentro
+    de colchetes, diferente de tuplas.
+
+Ferreamentas:
+    Inserção:
+        list.append(item)
+            Adiciona um valor ao final da lista.
+        
+        list.insert(index, item)
+            Adiciona um item numa posição específica.
+
+    !Se_a_posicao_para_inserir_seja_falsa_ocorrera_um_erro. 
+    
+    Remoção:
+        del list[index]
+            Deleta um item da lista por índice.
+
+        list.pop(index)
+            O mesmo uso do del, porém esta é uma função. E quanto está sem
+                index, remove o último valor.
+
+        list.remove(item)
+            Remove o primeiro de um item pelo valor especificado.
+
+    !Se_o_valor_para_deletar_seja_falso_ocorrera_um_erro.
+
+    Criação de lista:
+        name = list(range(0,10)) =
+            name = [0,1,2,3,4,5,6,7,8,9]
+
+    Organização:
+        list.sort()
+            Organizará do menor para o maior
+            não fúnciona dentro do print
+        
+        list.sort(reverse=True)
+            Organizará do maior para o menor
+
+    Listagem:
+        len(list)
+            Diz quantos itens tem na lista
+        
+        enumerate em for:
+            for c, v in enumerate(list):
+                Primeira variável recebe o índice do valor e a segunda o valor
+
+Se copiarmos uma lista com [lista = listb] ela crará uma ligação. Então quando mudarmos uma,
+    a outra tambpem mudará.
+
+    A forma correta é lista = listb[:]
+
+Exercícios:
+
+ex078:
+    Faça um programa que leia 5 valores númericos e guarde-os em uma lista.
+
+    No final, mostre qual foi o maior e o menor valor digitado e as suas
+        respectivas posições na lista.
+
+ex079:
+    ...onde o usuário possa digitar vários valores númericos e cadastre-os
+        em uma lista. Caso o número já exista lá dentro, ele não será
+            adicionado. No final serão exibidos todos os valores únicos
+                digitados, em ordem crescente.
+
+ex080:
+    ...onde o usuário possa digitar cinco valores númericos e cadastre-os
+        em uma lista. Já na posição correta de inserção (sem usar o sort())
+
+        No final, mostre a lista ordenada na tela.
+
+ex081:
+    ...vai ler vários númericos e colocar numa lista.
+
+    Depois disso mostre:
+
+        a) Quantos números foram digitadods.
+
+        b) A lista de valores, ordenada de forma decrescente.
+
+        c) Se o valor 5 foi digitado e está ou não na lista.
+
+ex082:
+    ...Depois disso, crie duas listas extras que vão conter apenas os
+        valores pares e os ímpares digitados, respectivamente.
+
+        Ao final mostre o contéudo das três listas geradas
+
+ex083:
+    ...o usuário digita uma expressão qualquer que use parentêses. Seu
+        aplicativo deverá analisar se a expressão passada está com os
+            parentêses abertos e fechados na ordem correta
+
+end.

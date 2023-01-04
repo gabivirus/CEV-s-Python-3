@@ -1,0 +1,157 @@
+Manipulando Texto Str.
+Manipulando cadeias de caracteres.
+
+uma frase para linguagens de programação é uma cadeia de caractere ou
+uma string ou até cadeia de palavras.
+
+frase = curso em video: quando formamos uma cadeia de caracteres numa variável
+o python guarda a informação em forma de cadeia, separando cada letra e espaço
+dentro de mini células e enumerando-as, de 0 para cima.
+
+operações possíveis:
+
+funções de fatiamento: seleciona uma parte da frase.
+ex:
+frase[9] (o simbolo de colchete é o identificador de lista).
+
+se você selecionar frase[9:13], o ultimo número não entra na contagem, ou seja,
+  mostra apenas até a letra do número anterior
+    ex: frase[9:27], só vai aparecer até o caractere de número 26
+      e quando quiser ir até  último caractere,
+         deve colocar um número a frente do que é o último
+           ex: se a frase terminar em 20 caracteres, então 21 deve ser o número digitado
+outro fragmento é frase[0:14:2], dessa forma serão digitadas de duas em duas palavras
+                [0,1,2,3,4,5,6,7,8,9,0,1,2,3,]
+    dessa forma [c,u,r,s,o, ,e,m, ,v,i,d,e,o,]
+                [c,x,r,x,o,x,e,x, ,x,i,x,e,x,].
+
+outras formas: frase[:5], com só o número da frente:
+    ele começa no zero e vai até o 5.
+
+frase[15:], sem caractere no fim:
+    começa do caractere selecionado [15], e vai até o fim.
+
+frase[9::3]:
+    começa na selecionada e vai até o fim, pulando de 3 em 3.
+
+funções de análise: analisa por exemplo:
+    tamanho, quantidade de caractere, primeira palavra inteira.
+
+.LEN (lens): len(frase)
+    mede o comprimento, quantos caracteres a cadeia tem:
+        ex: frase[c,u,r,s,o, ,e,m, ,v,i,d,e,o,]
+            len(frase) = 14 caracteres
+                e ela salva essa informação na memória.
+
+.COUNT: conta a quantidade de uma informação especifica na string.
+    ex:frase.count('o')
+        (se não posta entre aspas, o python irá identificar como uma variável)
+    e ele vai contar quantas vezes o 'o' aparece na string/cadeia
+        outra forma é frase.count('o',0,13):
+            (conta'o', de 0 até a 12).
+
+.FIND: diz onde encontrou uma informação  e mostra sua posição dentro da str.
+    ex: frase.find('deo')
+        'deo' posição 11.
+
+quando você põem uma informação que não existe no find, ele de dá o valor -1
+    então ele valida as informações, se existir, mostra sua posição, se nao, -1
+        está validando o erro
+            ex: frase.find('android')
+                find = -1.
+
+in: é usado assim: infor/in/var
+    primeiro a informação, então in, depois a variável onde deve procurar
+        ex: 'curso' in frase.
+
+Funções de transformação:
+    frase.replace: procura uma informação dentro da str, e a substitui
+        ex: frase,replace('python', 'android')
+        >>> var,  replace('plvr1','plvr2).
+
+.upper(): transforma uma str para letras maiúsculas
+    ex: frase.upper() = [CURSO EM VIDEO].
+
+.lower(): faz o contrário do comando upper, transformando os caracteres da str
+    em letras letras minúsculas
+        ex: frase.lower() = [curso em video].
+
+.captalize(): transforma todos os caracteres da str em maiúsculo, exceto
+    primeiro caractere.
+        ex: frase.captalize() = [C,u,r,s,o, ,e,m, ,v,i,d,e,o,].
+
+.title(): esse comando serve para contar quantas palavras uma str tem
+    por meio da contagem de espaços e faz outro comando parecido com o captalize
+        também diminuindo alguns caracteres, mas deixando em maiúscula
+            todas as primeiras letras de cada palavra, assim como um título
+     ex: frase.title() = [C,u,r,s,o, ,E,m, ,V,i,d,e,o,].
+
+Agora com outra str, agora utilizando mais espaços:
+    frase = [ , , ,A,p,r,e,n,d,a, ,P,y,t,h,o,n, , ,].
+
+no mundo da tecnologia, é recorrente pessoas clicarem na caixa de dialogo
+    e apertarem espaços algumas vezes para se certificarem de que está funcionando
+        o que é ruim pois pode embaralhar o código ou provocar erros
+            então o python e também outras linguagens, adicionaram funções
+                para corrigirem essa irregularidade.
+
+.strip(): remove todos os espaços desnecessários da str
+    ex: frase.strip() = [x,x,x,A,p,r,e,n,d,a, ,P,y,t,h,o,n,x,x]
+        ('x', são espaços cortados).
+
+.rstrip(): r(right)strip, (muitas funções usam r para diferencia-lás)
+    quando usada remove apenas os espaços desnecessários no fim da str,
+        ou lado direito
+            ex:frase.rstrip() = [ , , ,A,p,r,e,n,d,a, ,P,y,t,h,o,n,x,x].
+
+.lstrip(): l(left)strip, basicamente o contrário de rstrip, agora removendo
+    apenas os espaços da esquerda
+        ex:frase.lstrip = [x,x,x,A,p,r,e,n,d,a, ,P,y,t,h,o,n, , ,].
+
+Funções de divisão: para dividir strings.
+
+.split(): o split é feito pelos espaços, dividindo por uma nova lista
+    a cada parágrafo.
+        ex: frase.split() = [C,u,r,s,o,] [e,m,] [v,i,d,e,o,]
+            separou por três lista.
+
+*Lembrar sempre de que no final de cada há (parenteses)*
+
+Funções de junção:
+
+.join(): junta diferentes listas em uma só, é utilizada da seguinte forma
+    ''.join() : "caractere que vai aparecer na divisão de cada str"
+        .join/(variável)
+            ex: '-'.join(frase) = [C,u,r,s,o,-,e,m,-,v,i,d,e,o,].
+
+                        ___  ___  ___  _____ _  ___  ___
+                       |___||___||___|   |   | |    |___|
+                       |    |  \ |   |   |   | |___ |   |.
+
+22: Crie um programa que leia um nome completo de uma pessoa e mostre:
+    > o nome com todas letras maiúsculas
+        > com todas letras minúsculas
+            > quantas letras ao todo(sem considerar espaços18.5)
+                > quantas letras tem o primeiro nome.
+
+23: ''''leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.
+    > ex: digite um número: 1834
+        > unidade:4
+            > dezena:3
+                > centena:8
+                    > milhar:1.
+
+24:''''leia o nome de uma cidade e diga se ela começa ou não com o nome "santo".
+
+25:''''leia o nome de uma pessoa e diga se ela tem "silva" no nome.
+
+26:''''leia uma frase pelo teclado e mostre:
+    > quantas vezes a letra 'A' aparece
+        > em que posição ela aparece a primeira vez
+            > em que posição ela aparece pela última vez
+
+27:''''leia o nome completo de uma pessoa e mostre em seguida seu primeiro
+    e último nome.
+        > ex: Ana Maria de Souza
+            > primeiro = Ana
+                > último = Souza.
