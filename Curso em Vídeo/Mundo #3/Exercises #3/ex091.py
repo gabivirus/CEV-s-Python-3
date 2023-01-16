@@ -1,24 +1,14 @@
 from random import randint
+from operator import itemgetter
+from time import sleep
 
-count = 1
-players = {}
-player = []
+players = {'player1' : randint(1, 6),
+            'player2' : randint(1, 6),
+            'player3' : randint(1, 6),
+            'player4' : randint(1, 6)}
 
-for c in range(1, 5):
-    players[f'{c}° Jogador'] = randint(0, 6)
-    if c == 1 or players[f'{c}° Jogador'] > player[-1]:
-        player.append(players[f'{c}° Jogador'])
-    else:
-        p = 0
-        while p < len(player):
-            if players[f'{c}° Jogador'] <= player[p]:
-                player.insert(p, players[f'{c}° Jogador'])
-                break
-            p += 1
+rank = sorted(players.items(), key  = itemgetter(1), reverse = True)
 
-print()
-for k in range(1, 5):
-    print(f"em {k}° lugar, com {player[k-1]['{k}° jogador']} no dado ficou o {player[k]}")
-
-print()
-
+for k, v in enumerate(rank):
+    print(f'{k+1}° lugar: {v[0]} com {v[1]}')
+    sleep(0.5)
