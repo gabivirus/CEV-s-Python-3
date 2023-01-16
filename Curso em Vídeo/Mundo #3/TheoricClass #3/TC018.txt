@@ -73,7 +73,7 @@ ex090: v
         
         !$nome:; media de $nome:; 
 
-ex091:
+ex091: v
     ...onde 4 jogadores jogue um dado e tenham resultados aleatórios.
         Guarde esses resultados em um dicionário. No final, coloque
             esse dicionário emm ordem, sabendo que o vencedor tirou
