@@ -47,31 +47,31 @@ Ferreamentas:
                 Primeira variável recebe o índice do valor e a segunda o valor
 
 Se copiarmos uma lista com [lista = listb] ela crará uma ligação. Então quando mudarmos uma,
-    a outra tambpem mudará.
+    a outra também mudará.
 
     A forma correta é lista = listb[:]
 
 Exercícios:
 
-ex078:
+ex078: v
     Faça um programa que leia 5 valores númericos e guarde-os em uma lista.
 
     No final, mostre qual foi o maior e o menor valor digitado e as suas
         respectivas posições na lista.
 
-ex079:
+ex079: v
     ...onde o usuário possa digitar vários valores númericos e cadastre-os
         em uma lista. Caso o número já exista lá dentro, ele não será
             adicionado. No final serão exibidos todos os valores únicos
                 digitados, em ordem crescente.
 
-ex080:
+ex080: v
     ...onde o usuário possa digitar cinco valores númericos e cadastre-os
         em uma lista. Já na posição correta de inserção (sem usar o sort())
 
         No final, mostre a lista ordenada na tela.
 
-ex081:
+ex081: v
     ...vai ler vários númericos e colocar numa lista.
 
     Depois disso mostre:
@@ -82,13 +82,13 @@ ex081:
 
         c) Se o valor 5 foi digitado e está ou não na lista.
 
-ex082:
+ex082: v
     ...Depois disso, crie duas listas extras que vão conter apenas os
         valores pares e os ímpares digitados, respectivamente.
 
         Ao final mostre o contéudo das três listas geradas
 
-ex083:
+ex083: v
     ...o usuário digita uma expressão qualquer que use parentêses. Seu
         aplicativo deverá analisar se a expressão passada está com os
             parentêses abertos e fechados na ordem correta

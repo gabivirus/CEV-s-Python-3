@@ -21,7 +21,7 @@ Usabilidade:
     não é preciso empacotar.
 
     Empacotador:
-        def soma(* kvar):
+        def soma(* var):
             print(var)
         
         Dessa forma será criada uma tupla com os valores
@@ -65,7 +65,7 @@ ex099: v
 
 ex100:
     ... tenha uma lista chamada números[] e duas funções chamadas:
-        sortreio() e somaPar(). A primeria função vai sortear 5 números
+        sorteio() e somaPar(). A primeria função vai sortear 5 números
             e vai coloca-los dentro de uma lista e a segunda função vai
                 mostrar a soma entre todos os valores PARES sorteados
                     pela função anterior.

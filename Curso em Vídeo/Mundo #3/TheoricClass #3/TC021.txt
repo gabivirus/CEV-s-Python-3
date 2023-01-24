@@ -61,28 +61,28 @@ ex101: v
             retornando um valor literal, indicando se uma pessoa
                 tem o voto Negado, Opcional ou Obrigatório.
 
-ex102:
+ex102: v
     ... fatorial() que receba dois parâmetros: o primeiro que indique
         o número a calcular e o outro chamado show, que será um valor
             lógico (opcional) indicando se será ou não mostrado na tela
                 o processo de cálculo do fatorial.
 
-ex103:
+ex103: v
     ficha(), que receba dois parâmetros opcionais: o nome de um jogador
         e quantos gols ele marcou.
     
     O progrma deverá ser capaz dde mostrar a ficha do jogador, mesmo que
         algum dado não tenha sido informado corretamente.
 
-ex104:
-    leiaint(), que vai funcionar de forma semelhante à funlçao inputdo
+ex104: v
+    leiaint(), que vai funcionar de forma semelhante à funçâo input do
         python,só que fazendo a validação para aceitar apenas um valor
             numérico.
 
             Ex:
                 n = leiaint('Digite um n')
 
-ex105:
+ex105: v
     notas() quepode receber várias notas de alunos e vai retornar um
         dicionário	com as seguintes informações:
 
@@ -94,7 +94,7 @@ ex105:
     
     Adicione também as docstrings da função.
 
-ex106:
+ex106: v
     Faça um mini-sistema que utilize o Interactive Help do Python.
         O usuário vai digitar o comando e o manual vai aprecer. Quando
             o usuário digitar a palavra 'FIM', o programa se encerrará
