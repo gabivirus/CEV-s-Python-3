@@ -2,14 +2,14 @@ def readInt(value):
     ok = False
     number = 0
     while True:
-        integer = str(input(value))
+        integerNum = str(input(value))
 
-        if integer.isnumeric():
-            number = int(integer)
+        if integerNum.isnumeric():
+            number = int(integerNum)
             ok = True
 
         else:
-            '\033[31mERRO! Digite um número válido.\033[m'
+            print('\033[31mERRO! Digite um número válido.\033[m')
         
         if ok:
             break

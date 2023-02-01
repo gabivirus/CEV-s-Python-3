@@ -1,0 +1,53 @@
+Módulos e pacotes:
+
+O método surgiu nos anos 60. Para organizar os programas que ficavam
+    cada vez maiores, aumentar a legibilidade e facilitar a manutenção.
+
+Podemos importar nossas próprias funções, elas devem existir em outro
+    arquivo.
+
+Quando é apenas um arquivo, com poucas defs é recomendado usaar módulos.
+    Mas quando ouver muitos arquivos e muitas funções, use pacotes.
+
+Para os módulos nos pacotes serem identificados é necessário usar
+    __init__.py
+
+Exercícios:
+
+ex107: v
+    Crie um módulo chamado moeda.py que tenha funções incorporadas. Aumentar()
+        diminuir(), dobro() e metade()
+
+    Faça também um programa que importe esse módulo e use algumas dessas funções
+
+ex108: v
+    Adapte o código do desafio 107, criando uma função adicional chamada
+        moeda() que consiga mostrar os valores como um valor monetário
+            formatado.
+
+ex109: v
+    Modifique as funções criadas no desafio 107 para que elas aceitem um
+        parâmetro a mais, informando se o valor retornado por elas vai ser
+            ou não formatado pela função moeda(), desenvolvido no ex108.
+
+ex110: v
+    Adicione ao módulo criado moeda.py, uma função chamada resumo(), que
+        mostre na tela algumas informações gerada pelas funções que já
+            temos no módulo criado até aqui.
+
+            ex: moeda.resumo(p, 80, 35)
+
+ex111: v
+    Crie um pacote chamado utilidadesCeV que tenha dois módulos internos
+        chamados moeda e dado.
+
+    Transfira todas as funções utilizadas nos desafios desta aula para o
+        primeiro pacote e matenha tudo funcionando.
+
+ex112: v
+    Dentro do pacote utilidadesCeV que criamos, temos um módulo chamado dado.
+        Crie uma função chamada leiaDinheiro() que seja capaz de funcionar
+            como a função input(), mas com uma validação de dados para
+                aceitar apenas valores que sejam monetários.
+
+End.

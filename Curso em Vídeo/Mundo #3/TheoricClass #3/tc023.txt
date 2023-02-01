@@ -1,0 +1,59 @@
+Tratamento de Erros e exceções.
+
+Alguns tipos de erros e exceções:
+
+NameError:
+    É um erro semântico, quando é chamado um valor indefinido ou não existente.
+
+ValueError:
+    Quando o valor recebido não é válido.
+
+ZeroDivisorError:
+    Quando tentamos dividir um número por zero.
+
+ TypeError:
+    ex: 2/'2'
+
+IndexError:
+    Quando a indice de uma lista não existe.
+
+ModuleNorFoundError:
+    Quando um módulo não existe.
+
+Comandos try e except:
+    Dentro do try você digitara os dados principais. Ele serve para
+        segurar caso acontece um erro. E então vai pular pra except
+    
+    No módulo except, Inserimos comandos para quando houver erro.
+        Também podemos atribuir o erro há uma variável, com Exception.
+            ex Exception.__class__
+        Outra coisa é que podemos inserir um except para cada tipo de erro
+
+    Também podemos usar else e finally:
+
+    Em else é inserido o que acontecerá caso o programa funcione sem
+        erros
+    
+    Já finally acontecerá indepente do resultado. É costumeiro ser
+        usado para fechamento de banco de dados por exemplo
+
+
+Exercícios:
+
+ex113: v
+    Reescreva a função leiaint() que fizemos no desafio 104, incluindo
+        agora a possibilidade da digitação de um número de tipo
+            inválido. Aproveite e crie também uma função leiaFloat()
+                com a mesma funcionalidade.
+
+ex114: v
+    Crie um código em python se o site pudim está acessícvel.
+
+ex115: v
+    Crie um pequeno sistema modularizado que permita cadastras pessoas
+        pelo seu nome e idade em um arquivo de texto simples.
+    
+    O sistema só vai ter 2 opções: cadastras uma nova pessoa e listar
+        todas as pessoas cadastradas.
+
+End.
